@@ -1,0 +1,107 @@
+/* Base styles for the page view alignment */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f5f9; /* Will turn dark slate via Task 1 JavaScript */
+    transition: background-color 0.4s ease;
+}
+
+/* The starting profile card layout */
+.card-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px; /* Will change to 30px via Task 6 JavaScript */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    width: 400px;
+    transition: all 0.4s ease;
+}
+
+/* Initial styling for the student header text */
+#main-heading {
+    font-size: 24px;
+    color: #1e293b;
+    margin: 0 0 10px 0;
+}
+
+/* Default styling for the level tier label */
+.badge {
+    background-color: #cbd5e1;
+    color: #334155;
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Text styles for status reports */
+#status-text {
+    color: #64748b;
+    font-size: 15px;
+    margin: 0 0 25px 0;
+}
+
+/* Layout container holding child skill badges */
+.skills-box {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+/* Individual skill tag item defaults */
+.skills-box span {
+    background-color: #e2e8f0;
+    color: #475569;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    align-content: center;
+}
+
+@media screen and (max-width: 480px){
+    .skills-box {
+        /* flex-direction: column; */
+        /* align-items: center; */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .skills-box span {
+        display: block;
+        width: fit-content;  
+    }
+
+    .card-container {
+        width: 70%;
+        padding: 20px;
+    }
+    
+}
+
+/* TASK 5 KEY: UTILITY CLASS APPLIED DYNAMICALLY BY JAVASCRIPT */
+.dark-theme-card {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+    border: 2px solid #38bdf8;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Ensures text selectors inherit clean color updates inside dark mode */
+.dark-theme-card #main-heading {
+    color: #ffffff !important;
+}
+
+.dark-theme-card #status-text {
+    color: #94a3b8 !important;
+}
+
+
