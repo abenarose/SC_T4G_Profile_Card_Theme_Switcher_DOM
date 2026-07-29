@@ -12,6 +12,7 @@ document.body.style.backgroundColor = "#0f172a";
 
 // Your innerText code here...
 let heading = document.getElementById("main-heading");
+heading.innerText=`Atiemo Rosemond`
 
 
 // TASK 3: Use querySelector to grab the element with the class ".badge"
@@ -30,10 +31,9 @@ badge.style.color = "white";
 // Your selecting of the element goes here ...
 
 // Your innerHTML code here...
-let status = document.getElementById("status-text");
+let statusText = document.getElementById("status-text");
 
-status.innerHTML =
-"Status: <span style=`color: #10b981; font-weight: bold;`> ONLINE</span>";
+statusText.innerHTML = "Status: <span style='color: #10b981; font-weight: bold;'>ONLINE</span>";
 
 
 
